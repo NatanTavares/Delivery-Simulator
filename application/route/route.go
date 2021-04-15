@@ -10,8 +10,8 @@ import (
 )
 
 type Route struct {
-	ID        string     `json:"route-id"`
-	ClientID  string     `json:"client-id"`
+	ID        string     `json:"routeId"`
+	ClientID  string     `json:"clientId"`
 	Positions []Position `json:"position"`
 }
 
@@ -21,8 +21,8 @@ type Position struct {
 }
 
 type PartialRoutePosition struct {
-	ID       string    `json:"route-id"`
-	ClientID string    `json:"client-id"`
+	ID       string    `json:"route"`
+	ClientID string    `json:"clientId"`
 	Position []float64 `json:"position"`
 	Finished bool      `json:"finished"`
 }
